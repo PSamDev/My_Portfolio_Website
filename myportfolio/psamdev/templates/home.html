@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wilfred Samuel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rei = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+
+    <link
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		rel="stylesheet"
+		/>
+		<!-- Google Fonts -->
+		<link
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+		rel="stylesheet"
+		/>
+    {% load static %}
+    {% load crispy_forms_tags %}
+    <link rel = "stylesheet", href = "{% static 'style.css' %}">
+  </head>
+ 
+  <body>
+    {% for message in messages %}
+                        <div class="alert {{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+
+      <div class = "hero" >
+        <nav>
+          <h2 class = "logo">Wilfred<span> Samuel</span></h2>
+          
+          <ul>
+            <li><a href = "/">Home</a></li>
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#portfolio">Portfolio</a></li>
+            <li><a href = "#contact">Contact</a></li>
+          </ul>
+          <a href = "mailto:wilfredsamuel000@gmail.com"> <button type = "button">Let's Talk</button></a>
+        </nav>
+      </div>
+
+      <div class = "content">
+        <h1>Hi I'm Samuel,</h1>
+        <h2 style = "color:white;">I help companies build responsive <br> websites</h2>
+
+      </div>
+      <br>
+        <div class = "botton">
+          <a href = "mailto:wilfredsamuel000@gmail.com"><button>Let's Talk</button></a>
+        </div>
+
+          
+    <div class = "container my-3" id = "portfolio">
+      <h3><center>Featured Projects</center></h3>
+      <div class = "row">
+    <div class = "col">
+    <div class="card" style="width: 18rem;">
+      <img src= "{% static '/img/blog.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">News Blog</h5>
+        <p class="card-text">A simple blog that allows Admin to upload articles from the backend and it displays on the frontend</p>
+        <a href="https://github.com/PSamDev/News_Blog" class="btn btn-danger">View source code</a>
+            </div>
+          </div>
+        </div>
+        <div class = "col">
+          <div class="card" style="width: 18rem;" >
+            <img src= "{% static '/img/weather.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Weather App</h5>
+              <p class="card-text">A Web App that allows you check the weather condition of different locations</p>
+              <a href="https://github.com/PSamDev/Weather-Checker" class="btn btn-danger">View source code</a>
+                  </div>
+                </div>
+              </div>
+              <div class = "col">
+                <div class="card" style="width: 18rem;">
+                  {% comment %} <img src="https://picsum.photos/400/200" class="card-img-top" alt="..."> {% endcomment %}
+                  <img src= "{% static '/img/youtube.png' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">YouTube Downloader</h5>
+                    <p class="card-text">A Web App that helps a user to download videos from YouTube by paste the URL</p>
+                    <a href="https://github.com/PSamDev/YouTube-Downloader" class="btn btn-danger">View source code</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "col">
+                      <div class="card" style="width: 18rem;">
+                        <img src="https://picsum.photos/400/200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Login Page</h5>
+                          <p class="card-text">A secure Web App that allows a user to login, logout, set, change and reset password</p>
+                          <a href="https://github.com/PSamDev/Login-Page" class="btn btn-danger">View source code</a>
+                              </div>
+                            </div>
+                          </div>
+                          
+      </div>
+    </div>
+  </div>
+
+        <div class = "container my-3" id = "about">
+        <h3><center>About</center></h3>
+        <div class = "row">
+            <div class = "col">
+              <h5 style = "color:#ea1538;" class = "mb-3">Work Experience</h5>
+              <div class = "card">
+                <div class = "card-body">
+               
+                <h5>Freelance Web Developer</h5>
+                <div><strong>2019 - Date</strong></div>
+                <p style = "text-align:left;">As a freelance backend developer, I have engaged in:
+                    <ul class = "list-group list-group-flush">
+                        <li class = "list-group-item">
+                            Building functional backends
+                        </li>
+                        <li class = "list-group-item">
+                            Debugging already made codes
+                        </li>
+                        <li class = "list-group-item">
+                            Working alongside Development teams
+                        </li>
+                        <li class = "list-group-item">
+                          Contibuting to open source projects
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class = "col">
+              <h5 class = "mb-3" style = "color:#ea1538;">Skills</h5>
+                <div class = "card" style = "font-size: 19px;">
+                  <div class = "card-body">
+                 
+                  <h5>Front End Web Development</h5>
+                  <p style = "text-align:left;">I have proficient and excellent knowledge of: </p>
+                      <ul class = "list-group list-group-flush">
+                          <li class = "list-group-item">
+                              HTML (HyperText Markup Language)
+                          </li>
+                          <li class = "list-group-item" >
+                              CSS (Cascading Stylesheet)
+                          </li>
+                          <li class = "list-group-item">
+                              Bootstrap
+                          </li>
+                          <li class = "list-group-item">
+                            WordPress (Elementor)
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "container my-3">
+      <div class = "row">
+          <div class = "col">
+            <br>
+            <div class = "card">
+              <div class = "card-body">
+              <h5>Udemy Student</h5>
+              <div><strong>2022 - Date</strong></div>
+              <p style = "text-align:left;">As a student under Udemy, I have:</p> 
+                
+                  <ul class = "list-group list-group-flush">
+                      <li class = "list-group-item">
+                          Learned about Python Programming Language
+                      </li>
+                      <li class = "list-group-item">
+                          Applied DJango Franwork when working on Projects
+                      </li>
+                      <li class = "list-group-item">
+                          Built responsive websites
+                      </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class = "col">
+            <br>
+              <div class = "card">
+                <div class = "card-body" style = "font-size: 20px;">
+                <h5>Back End Web Development</h5>
+                <p style = "text-align:left;">Over the years I have gathered knowledge and worked with:</p>
+                    <ul class = "list-group list-group-flush">
+                        <li class = "list-group-item">
+                            Python Programming Language
+                        </li>
+                        <li class = "list-group-item">
+                          Django Framework 
+                        </li>
+                        <li class = "list-group-item">
+                          Sqlite Database
+                        </li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+
+<br>
+  <div class = "form-group bg-dark" id = "contact">
+    <div class = "row text-center text-md-left"> 
+      <div class = "col-md-6 col-lg-3 col-xl-10 mx-auto auto-3">
+        <h3>Contact</h3>
+    <form method = "POST">
+          {% csrf_token %}
+          <div class="row">
+          <div class="col-4">
+            {{ form.name|as_crispy_field }}
+          </div>
+          <div class="col-4">
+            {{ form.email|as_crispy_field }}
+          </div>
+          <div class="col-4">
+            {{ form.number|as_crispy_field }}
+          </div>
+        </div>
+          {{ form.message|as_crispy_field }}
+           {% comment %} {{ form |crispy }} {% endcomment %}
+           <br>
+           
+          <input type = "submit" value = "Submit Message" class="btn btn-sm btn-danger">
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <footer class="page-footer bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+    <div class = "row text-center text-md-left"> 
+      <div class = "col-md-3 col-lg-3 col-xl-3 mx-auto auto-3">
+        <h5 class = "text-uppercase mb-4 text-weight-bold text-danger"><strong>Wilfred Samuel</strong></h5>
+        <p style = "text-align:left">
+          WIlfred Samuel Is a young, passionate, self-taught software developer.<br><br>
+          He is hardworking, focused and commited to his projects and works.<br><br>
+          He loves learning from others and teaching others.
+
+        </p><link rei = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+      </div>
+       <div class = "col-md-3 col-lg-2 col-xl-2 mx-auto auto-3">
+        <h5 class = "text-uppercase mb-4 text-weight-bold text-danger"><strong>Follow</strong></h5>
+        <p>
+          <a href = "https://www.facebook.com/wilfred.samueljw?mibextid=ZbWKwL" class = "btn-floating btn-sm text-white" style = "font-size:20px; text-decoration: none;"> <i class="fa-brands fa-facebook"></i>Facebook</a>
+        </p>
+        <p>
+          <a href = "https://instagram.com/psammy_love?igshid=ZDdkNTZiNTM=" class = "btn-floating btn-sm text-white" style = "font-size:20px; text-decoration: none;"> <i class="fa-brands fa-instagram"></i></i>Instagram</a>
+        </p>
+        <p>
+          <a href = "https://www.linkedin.com/in/wilfred-samuel-0a23831b0" class = "btn-floating btn-sm text-white" style = "font-size:20px; text-decoration: none;"> <i class="fa-brands fa-linkedin"></i>Linkedin</a>
+        </p>
+        <p>
+          <a href = "https://twitter.com/PSamDev?t=WU8lTkOqIGqhktQuaAQVzA&s=09" class = "btn-floating btn-sm text-white" style = "font-size:20px; text-decoration: none;"> <i class="fa-brands fa-twitter"></i></i>Twitter</a>
+        </p>
+        <p>
+          <a href = "/" class = "btn-floating btn-sm text-white" style = "font-size:20px; text-decoration: none;"> <i class="fa-brands fa-whatsapp"></i></i>WhatsApp</a>
+        </p>
+      </div> 
+
+      <div class = "col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class = "text-uppercase mb-4 font-weight-bold text-danger"><strong>Contact</strong></h5>
+        <p>
+          <i class="fas fa-home mr-3"></i> Ikorodu, Lagos State, NIgeria
+        </p>
+        <p> <a href = "mailto:wilfredsamuel000@gmail.com" class = "btn-floating btn-sm text-white" style = "text-decoration:none;">
+          <i class = "fas fa-envelope mr-3"></i> WilfredSamuel000@gmail.com
+        </p></a>
+        <p>
+          <i class = "fas fa-phone mr-3"></i>+234 803 409 5344 
+        </p><link rei = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+        <p>
+          <i class = "fas fa-print mr-3"></i> WIlfred Samuel
+        </p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
