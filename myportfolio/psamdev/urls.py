@@ -6,3 +6,4 @@ app_name = "psamdev"
 urlpatterns = [
     path("", views.home, name="home") 
 ]
+
