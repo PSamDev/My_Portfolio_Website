@@ -1,2 +1,2 @@
 # Portfolio_Website
-This is a simple portfolio for a junior fullstack website developer built with, HTML, CSS, Bootstrap, Python/Django
+This is a simple portfolio for a fullstack website developer built with, HTML, CSS, Bootstrap, Python/Django
