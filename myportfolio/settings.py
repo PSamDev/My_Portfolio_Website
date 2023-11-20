@@ -26,13 +26,13 @@ SECRET_KEY = 'django-insecure-(d+9^lqi%u7z6-2b5fp2*p*u6$xejy9^z^!*^jrs&dl$w-fq*l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    "psamdev.apps.PsamdevConfig",
+    "psamdev",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
